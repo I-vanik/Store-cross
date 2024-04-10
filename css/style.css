@@ -1,0 +1,241 @@
+@import url(Reset.css);
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Intro Book';
+    src: url(../fonts/Intro-Book.ttf);
+}
+@font-face {
+    font-family: 'Intro Regular';
+    src: url(../fonts/Intro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Intro Bold';
+    src: url(../fonts/Intro-Bold.ttf);
+}
+
+/* Root */
+
+:root {
+    --color-bg: #484283;
+    --color-bg-white: #fff;
+    --text-white: #fff;
+    --text-black: #444B58;
+    --color_accent: #F14F4F;
+    --color-filter-bg:#FFF4EE;
+    --color-filter-input-checkbox:#DBBBA9;
+}
+
+html, body {
+    background-color: var(--color-bg);
+    font-family: 'Intro Book';
+    color: var(--text-black);
+}
+
+.container {
+    position: relative; 
+    max-width: 1180px;
+    padding:  0 10px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    border-bottom: .5px solid #ffffff81;
+    margin: 0 0 0 7px;
+}
+.logo {
+    font-family: 'Intro Bold';
+    font-size: 30px;
+    color: var(--text-white);
+}
+.nav__items {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+.nav__list:last-child {
+    display: flex;
+    align-items: center;
+}
+.nav__link {
+    color: var(--text-white);
+    font-size: 14px;
+}
+.nav-cart{
+    margin-left: 10px; 
+}
+
+.header__main {
+    padding:97px 0 100px 7px ; 
+    position: relative;
+  
+}
+
+.bg__text {
+    position: absolute;
+    font-size: 200px;
+    font-family:'Intro Bold' ;
+    color: #ffffff36;
+    left: 169px;
+    top: 221px;
+} 
+
+.header__text {
+    max-width: 535px;
+}
+.header__title {
+    font-family: 'Intro Regular';
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--text-white);
+
+    margin: 0 0 20px 0;
+   
+}
+.header__title_h2 {
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--text-white);
+
+    margin: 0 0 40px 0;
+}
+.header_btn {
+    display: inline-block;
+    outline: none;
+    padding: 22px 47px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: var(--color_accent) ;
+    color: var(--text-white);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Main */
+.main {
+    background-color: var(--color-bg-white);
+}
+.catalog {
+    padding: 58px 0 0 8px;
+}
+.catalog__title {
+    padding:  0 0 40px 0;
+    font-family:'Intro Bold';
+    font-size: 30px;
+}
+.catalog__wrapper {
+}
+
+
+/* Filters */
+
+.catalog__wrapper_filters {
+    padding: 20px 20px;
+    background-color: var(--color-filter-bg);
+    max-width: 240px;
+    
+}
+.filter_title {
+    padding: 0 0 21px 0;
+    font-size: 24px;
+}
+
+/* Price-input */
+
+.input_price {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    padding: 0 0 28px 0;
+}
+.catalog__wrapper_filters p {
+    padding: 0 0 10px 0;
+    font-size: 16px;
+}
+.field {
+}
+.input-min{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius:4px;
+    border: solid 1px #B2B5BB ;
+    border-right:none ;
+    
+}
+.input-min::-webkit-outer-spin-button,
+.input-min::-webkit-inner-spin-button,
+.input-max::-webkit-inner-spin-button,
+.input-max::-webkit-outer-spin-button{
+    display: none;
+}
+.input-max {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius:4px;
+    border: solid 1px #B2B5BB ;
+    border-left:none ;
+}
+.input-min, .input-max  {
+    height: 48px;
+    width: 114px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Intro Book';
+    color: var(--text-black);
+    background-color: var(--color-filter-bg);
+}
+.separator {
+    border-right: .5px solid #B2B5BB;
+    height: 34px;
+}
+
+/* Range price */
+
+.input_range {
+    position: absolute;
+    top: 43px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.left-range {
+    width: 3px;
+    height: 18px;
+    background-color: var(--text-black);
+    border-radius: 4px;
+}
+.center-range {
+    width: 236px;
+    height: 2px;
+    background-color: var(--text-black);
+    border-radius: 4px;
+}
+.right-range {
+    width: 3px;
+    height: 18px;
+    background-color: var(--text-black);
+    border-radius: 4px;
+}
+
+/* filter_gender_field */
+
+.filter_gender_field {
+}
+
+.filter_gender_checkbox {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.filter_gender_checkbox {
+}
+

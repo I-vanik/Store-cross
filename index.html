@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SneakMax</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <h1 class="logo">SneakMax</h1>
+                <ul class="nav__items">
+                    <li class="nav__list"><a href="#" class="nav__link">Каталог</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Подбор товара</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Наша команда</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Доставка и оплата</a></li>
+                    <li class="nav__list"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__list "><a href="#" class="nav__link">Корзина</a><img src="img/icons/cart.svg" class="nav-cart" alt=""></li>
+                </ul>
+            </nav>
+            <div class="bg__text">
+                SneakMax
+            </div>
+            <div class="header__main">      
+                <div class="header__text">
+                    <h1 class="header__title">Кроссовки известных брендов 
+                        с доставкой по России и СНГ</h1>
+                    <h2 class="header__title_h2">Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebok, Converse и многие другие по низким ценам</h2>
+                    <a href="#" class="header_btn">
+                        <span>Перейти к покупкам</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="catalog">
+                <h2 class="catalog__title">Каталог</h2>
+                <div class="catalog__wrapper">
+                    <div class="catalog__wrapper_filters">
+                        <h4 class="filter_title">Подбор <br> по параметрам</h4>
+                        <p>Цена, руб</p>
+                        <div class="input_price">
+                            <div class="field">
+                                <input type="number" class="input-min" value="5">
+                            </div>
+                            <div class="separator">
+                            </div>
+                            <div class="field">
+                                <input type="number" class="input-max" value="123000">
+                            </div>
+                            <div class="input_range">
+                                <div class="left-range"></div>
+                                <div class="center-range"></div>
+                                <div class="right-range"></div>
+                            </div>
+                        </div>
+                        <p>Пол</p>
+                        <div class="filter_gender_field">
+                            <input id="man" type="checkbox" class="filter_gender_checkbox" value="мужской">
+                            <label for="man">мужской</label>
+                            <input id="women" type="checkbox" class="filter_gender_checkbox" value="женский">
+                            <label for="women">женский</label>
+                        </div>
+                    </div>
+                    <div class="catalog__wrapper_assortment"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
